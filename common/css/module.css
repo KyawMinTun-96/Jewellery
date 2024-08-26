@@ -1,0 +1,541 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite,
+code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer,
+header, hgroup, menu, nav, section, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
+	line-height: 1;
+	-ms-word-wrap: break-word;
+	    word-wrap: break-word;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	color: #22325f;
+}
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+	display:block;
+}
+br{
+	line-height: 0;
+}
+ul li {
+	list-style: none;
+}
+a,
+a:hover,
+a:focus,
+a:active{
+	text-decoration:none;
+	color: #22325f;
+}
+input,select,textarea,button{
+	margin:0;
+	padding:0;
+	border:0;
+	background: transparent;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	-webkit-border-radius: 0;
+	        border-radius: 0;
+	font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
+} 
+button{
+	cursor: pointer;
+}
+img{
+	vertical-align:middle;
+}
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.clearfix:after {
+	height: 0;
+	display: block;
+	clear: both;
+	content: "";
+}
+.only_pc, .only_tb{
+	display: block;
+}
+.only_sp{
+	display: none;
+}
+.row:before,
+.row:after{
+	display: table;
+	content: " ";
+}
+.row:after{
+	height: 0;
+	display: block;
+	clear: both;
+	content: "";
+}
+.grid_01,
+.grid_02,
+.grid_03,
+.grid_04,
+.grid_05,
+.grid_tb_01,
+.grid_tb_02,
+.grid_tb_03,
+.grid_tb_04,
+.grid_tb_05,
+.grid_sp_01,
+.grid_sp_02,
+.grid_sp_03,
+.grid_sp_04,
+.grid_sp_05{
+	position: relative;
+	min-height: 1px;
+}
+
+/*For PC*/
+@media only screen and (min-width: 980px) {
+	.grid_01,
+	.grid_02,
+	.grid_03,
+	.grid_04,
+	.grid_05{
+		float: left;
+	}
+	.grid_01{
+		width: 100%;
+	}
+	.grid_02{
+		width: 50%;
+	}
+	.grid_03{
+		width: 33.33333333%;
+	}
+	.grid_04{
+		width: 25%;
+	}
+	.grid_05{
+		width: 20%;
+	}
+	.only_pc{
+		display: block;
+	}
+	.only_tb,
+	.only_sp{
+		display: none;
+	}
+}
+
+/*For Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+	.grid_tb_01,
+	.grid_tb_02,
+	.grid_tb_03,
+	.grid_tb_04,
+	.grid_tb_05{
+		float: left;
+	}
+	.grid_tb_01{
+		width: 100%;
+	}
+	.grid_tb_02{
+		width: 50%;
+	}
+	.grid_tb_03{
+		width: 33.33333333%;
+	}
+	.grid_tb_04{
+		width: 25%;
+	}
+	.grid_tb_05{
+		width: 20%;
+	}
+	.only_pc, .only_tb{
+		display: block;
+	}
+	.only_sp{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite,
+	code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset,
+	form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer,
+	header, hgroup, menu, nav, section, time, mark, audio, video {
+		font-size:.12rem;
+	}
+	body{
+		width: 100%;
+	}
+	.inner{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.grid_sp_01,
+	.grid_sp_02,
+	.grid_sp_03,
+	.grid_sp_04,
+	.grid_sp_05{
+		float: left;
+	}
+	.grid_sp_01{
+		width: 100%;
+	}
+	.grid_sp_02{
+		width: 50%;
+	}
+	.grid_sp_03{
+		width: 33.33333333%;
+	}
+	.grid_sp_04{
+		width: 25%;
+	}
+	.grid_sp_05{
+		width: 20%;
+	}
+	.only_pc{
+		display: none;
+	}
+	.only_sp,
+	.only_tb{
+		display: block;
+	}	
+}
+/*end of common css*/
+/*beta module*/
+.content{
+	margin: 162px 0 65px 0;
+}
+.inner{
+	width: 1086px;
+	margin: 0 auto;
+}
+.ttl_mod_beta_h2{
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 0.57;
+	color: #009eaa;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.txt_mod_beta,
+.txt_mod_beta02{
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 1.5;
+	color: #24585e;
+}
+.ttl_beta_list{
+	font-size: 16px;
+	text-align: left;
+	color: #009eaa;
+	line-height: 1;
+	position: relative;
+	padding-left: 28px;
+	margin-bottom: 5px;
+}
+.ttl_beta_list:before{
+	content: '●';
+    position: absolute;
+    color: #009eaa;
+    font-size: 16px;
+    top: 0;
+    left: 0;
+}
+.txt_mod_beta02{
+	font-size: 16px;
+	line-height: 2;
+	color: #373737;
+	padding-left: 28px;
+}
+.list_sec{
+	margin-bottom: 24px;
+}
+/*form_sec*/
+.form_sec{
+	width: 980px;
+	margin: 0 auto;
+	padding: 0 34px;
+}
+.form_sec .txt_label{
+	width: 308px;
+}
+.form_sec .txt_input{
+	width: 604px;
+}
+.form_sec .txt_label,
+.form_sec .txt_input{
+	margin-bottom: 34px;
+}
+.form_sec .txt_label label,
+.form_sec .txt_input input{
+	color: #24585e;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1.7;
+}
+.form_sec .txt_label label span{
+	color: #c73b3c;
+}
+.form_sec .txt_input input,
+.form_sec .txt_input textarea{
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-top-color: rgb(204, 204, 204);
+	border-right-color: rgb(204, 204, 204);
+	border-bottom-color: rgb(204, 204, 204);
+	border-left-color: rgb(204, 204, 204);
+	border-bottom-color: #F8F6F6;
+	border-right-color: #A8A4A4;
+	border-top-color: #A8A4A4;
+	border-left-color: #A8A4A4;
+	height: 34px;
+	padding: 0 10px;
+    -moz-box-shadow: -1px 3px 4px #f5f5f5;
+    -webkit-box-shadow: -1px 3px 4px #f5f5f5;
+    box-shadow: -1px 3px 4px #f5f5f5;
+}
+.form_sec .txt_input textarea{
+	height: 155px;
+	resize: none;
+	padding: 10px;
+}
+
+/*checkbox*/
+/* The label_chk */
+.label_chk {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.label_chk .chk_input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+  border: 1px solid #c2c2c2;
+}
+
+/* On mouse-over, add a grey background color */
+.label_chk:hover .chk_input ~ .checkmark {
+  background-color: #ffffff;
+}
+
+/* When the checkbox is checked, add a blue background */
+.label_chk .chk_input:checked ~ .checkmark {
+  background-color: #009eaa;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.label_chk .chk_input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.label_chk .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*btn_sec*/
+.btn_sec{
+	display: block;
+	text-align: center;
+}
+.btn_sec .btn_submit{
+	background: #009eaa;
+	width: 170px;
+	color: #FFF;
+	line-height: 1;
+	font-size: 16px;
+	font-weight: normal;
+	-webkit-border-radius: 3px;
+	        border-radius: 3px;
+	padding: 12px 0;
+	text-align: center;
+}
+/*Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 1086px) {
+	.content{
+		margin: 12.65625% 0 5.078125% 0;
+	}
+	.inner{
+		width: 84.84375%;
+		max-width: 1086px;
+	}
+	/*form_sec*/
+	.form_sec{
+		width: 90.2394%;
+		max-width: 980px;
+		padding: 0 3.130%;
+	}
+	.form_sec .txt_label{
+		width: 33.77%;
+	}
+	.form_sec .txt_input{
+		width: 66.228%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	/*beta module*/
+	.content{
+		margin: 1.68rem 0 .65rem 0;
+	}
+	.inner{
+		width: 5.80rem;
+		margin: 1.68rem auto 0;
+		text-align: left;
+	}
+	.ttl_mod_beta_h2{
+		font-size: .28rem;
+		margin-bottom: .50rem;
+	}
+	.txt_mod_beta,
+	.txt_mod_beta02{
+		font-size: .2rem;
+		font-weight: normal;
+		line-height: 1.5;
+		color: #24585e;
+	}
+	.ttl_beta_list{
+		font-size: .22rem;
+		padding-left: .28rem;
+		margin-bottom: .05rem;
+	}
+	.ttl_beta_list:before{
+		content: '●';
+	    position: absolute;
+	    color: #009eaa;
+	    font-size: .16rem;
+	    top: 0;
+	    left: 0;
+	}
+	.txt_mod_beta02{
+		font-size: .18rem;
+		line-height: 1.5;
+		padding-left: .28rem;
+	}
+	.list_sec{
+		margin-bottom: .3rem;
+	}
+	/*form_sec*/
+	.form_sec{
+		width: 90.625%;
+		max-width: 580px;
+		padding: 0 0;
+	}
+	.form_sec .txt_label{
+		width: 100%;
+	}
+	.form_sec .txt_input{
+		width: 100%;
+	}
+	.form_sec .txt_label,
+	.form_sec .txt_input{
+		margin-bottom: .45rem;
+	}
+	.form_sec .txt_label{
+		margin-bottom: .2rem;
+	}
+	.form_sec .txt_label label,
+	.form_sec .txt_input input{
+		font-size: .22rem;
+	}
+	.form_sec .txt_input input,
+	.form_sec .txt_input textarea{
+		border: .02rem solid #ccc;
+		height: .45rem;
+		padding: 0 .10rem;
+	    -moz-box-shadow: -.01rem .03rem .04rem #f5f5f5;
+	    -webkit-box-shadow: -.01rem .03rem .04rem #f5f5f5;
+	    box-shadow: -.01rem .03rem .04rem #f5f5f5;
+	}
+	.form_sec .txt_input textarea{
+		height: 1.17rem;
+		padding: .1rem;
+	}
+
+	/*checkbox*/
+	/* The label_chk */
+	.label_chk {
+	  padding-left: .5rem;
+	  font-size: .22rem;
+	}
+
+	/* Create a custom checkbox */
+	.checkmark {
+	  height: .3rem;
+	  width: .3rem;
+	  background-color: #ffffff;
+	  border: .01rem solid #c2c2c2;
+	}
+
+	/* Style the checkmark/indicator */
+	.label_chk .checkmark:after {
+	  left: .09rem;
+	  top: .05rem;
+	  width: .08rem;
+	  height: .15rem;
+	  border: solid white;
+	  border-width: 0 .03rem .03rem 0;
+	}
+	/*btn_sec*/
+	.btn_sec .btn_submit{
+		width: 2rem;
+		line-height: 1;
+		font-size: .22rem;
+		-webkit-border-radius: .03rem;
+		        border-radius: .03rem;
+		padding: .18rem 0 .2rem;
+		text-align: center;
+	}
+}
+
+
